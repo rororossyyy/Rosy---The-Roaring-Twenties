@@ -12,10 +12,14 @@
 
 /* Style the header with a grey background and some padding */
 body { margin:0; }
+	
 .header {
   overflow: hidden;
   background-color: #1B1E17;
   padding: 20px 10px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 /* Style the header links */
@@ -74,31 +78,51 @@ body { margin:0; }
   background: url(images/nathan-dumlao-282422-unsplash.jpg)center ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   color: white;
   font-size: 50px;
-}
-
-.headertextL {
-    font-size: 50px;
-    font-family: Snell Roundhand, cursive;
-}
-
-.headertextS {
-    font-family: Times, Times New Roman, serif;
+  width: 100%;
 }
 
 /* Footer */
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #1B1E17;
     color: white;
+	padding: 20px 10px;
 }
+
+.separator1 {
+  overflow: hidden;
+  background-color: #1B1E17;
+  padding: 50px 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+	}
+	
+.separator2 {
+  overflow: hidden;
+  background: url(images/nadia-jamnik-57709-unsplash.jpg) ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+	}
+	
+.sections {
+		margin: 20px 200px;
+	}
+	
+
 </style>
 
 <!-- HTML Coding -->
@@ -114,15 +138,25 @@ body { margin:0; }
 </div>
 
 <div class="bigheader">
-  <h1 class="headertextL">Howdy</h1>
+  <h1>Howdy</h1>
   <p style="color: 	#854D1E">Welcome To the The Roaring Twenties</p>
 </div>
+
+<div class="separator1">
+	<h1> What Is The Roaring Twenties?</h1>
+</div>
+<p class=sections>The Roaring Twenties Is...</p>
+<div class="separator2">
+	<h1>When Was This?</h1>
+</div>
+<p class=sections>The Time This Took Place Was...</p>
 
 
 <div class="footer">
     <p style="text-align: right;">Website Created by Rosy Casabar</p>
     <p style="text-align: right;">© Rosy C.</p>
-    
+</div>
+
 
 <body>
 </body>
