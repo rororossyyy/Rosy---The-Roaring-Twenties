@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Roaring Twenties</title>
+</head>
+
+<!-- CSS Coding -->
+<style>
+/* Style the header with a grey background and some padding */
+body { margin:0; }
+.header {
+  overflow: hidden;
+  background-color: #1B1E17;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #E2CC9D;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #C7924E;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.bigheader {
+  padding: 60px;
+  text-align: center;
+  background: url(images/nathan-dumlao-282422-unsplash.jpg)center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 50px;
+  font-family: "Kunstler Script", "Times New Roman";
+	.p font-family: "Times New Roman"
+}
+</style>
+
+<!-- HTML Coding -->
+
+<div class="header">
+  <a href="#default" class="logo">The Roaring Twenties</a>
+  <div class="header-right">
+    <a class="active" href="#">Home</a>
+    <a href="#">Page Two</a>
+    <a href="#">Page Three</a>
+    <a href="#">Jazz</a>
+  </div>
+</div>
+
+<div class="bigheader">
+  <h1 style=>Howdy</h1>
+  <p style="color: 	#854D1E">Welcome To the The Roaring Twenties</p>
+</div>
+
+<body>
+</body>
+</html>
