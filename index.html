@@ -7,50 +7,51 @@
 
 <!-- CSS Coding -->
 <style>
-/* Style the header with a grey background and some padding */
 body { margin:0; }
+
+/* Top Menu Bar */
+
 .header {
   overflow: hidden;
   background-color: #1B1E17;
   padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-/* Style the header links */
 .header a {
   float: left;
   color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  font-family: cursive;
 }
 
-/* Change the background color on mouse-over */
 .header a:hover {
   background-color: #E2CC9D;
   color: black;
 }
 
-/* Style the active/current link*/
 .header a.active {
   background-color: #C7924E;
   color: white;
 }
 
-/* Float the link section to the right */
 .header-right {
   float: right;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -61,20 +62,63 @@ body { margin:0; }
     float: none;
   }
 }
+
+/* Main Header */
+
 .bigheader {
   padding: 60px;
   text-align: center;
-  background: url(images/nathan-dumlao-282422-unsplash.jpg)center ;
+  background: url(images/nathan-dumlao-282422-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   font-size: 50px;
-  font-family: "Kunstler Script", "Times New Roman";
-	.p font-family: "Times New Roman"
 }
+
+/* Footer */
+
+.footer {
+    left: 0;
+    bottom: 0;
+    background-color: #1B1E17;
+    color: white;
+	padding: 20px 10px;
+}
+
+/* Separators */
+
+.separator1 {
+  overflow: hidden;
+  background-color: #1B1E17;
+  padding: 50px 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+	}
+
+.separator2 {
+  overflow: hidden;
+  background: url(images/nadia-jamnik-57709-unsplash.jpg) ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+	}
+
+/* Sections */
+
+.sections {
+		margin: 20px 200px;
+	}
 </style>
 
-<!-- HTML Coding -->
+<!-- HTML -->
+<!-- Top Bar -->
 
 <div class="header">
   <a href="#default" class="logo">The Roaring Twenties</a>
@@ -87,9 +131,27 @@ body { margin:0; }
 </div>
 
 <div class="bigheader">
-  <h1 style=>Howdy</h1>
+  <h1>Howdy</h1>
   <p style="color: 	#854D1E">Welcome To the The Roaring Twenties</p>
 </div>
+
+<!-- Body -->
+
+<div class="separator1">
+	<p> What Is The Roaring Twenties?</p>
+</div>
+<p class=sections>The Roaring Twenties Is...</p>
+<div class="separator2">
+	<p>When Was This?</p>
+</div>
+<p class=sections>The Time This Took Place Was...</p>
+
+
+<div class="footer">
+    <p style="text-align: right;">Website Created by Rosy Casabar</p>
+    <p style="text-align: right;">© Rosy C.</p>
+</div>
+
 
 <body>
 </body>
